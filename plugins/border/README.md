@@ -1,2 +1,2 @@
-Einbindung eines Bildes auf dem Login Screen
-============================================
+Blendet einen Hinweis "ENTWICKLUNGSUMGEBUNG" ein
+===============================================
