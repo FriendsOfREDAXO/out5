@@ -6,7 +6,7 @@ if (rex::isBackend() && is_object(rex::getUser())) {
 
 // $this->getInstalledPlugins();
 
-$InstalledPlugins = $this->getInstalledPlugins();
+$InstalledPlugins = $this->getAvailablePlugins();
 
 if(!empty($InstalledPlugins)) {
   $Page = $this->getProperty('page');
@@ -29,5 +29,4 @@ if(!empty($InstalledPlugins)) {
   }
   $this->setProperty('page',$Page);
 }
-
 

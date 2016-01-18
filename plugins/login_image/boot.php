@@ -1,4 +1,5 @@
 <?php
+
 if (rex::isBackend()) {
   rex_extension::register('OUTPUT_FILTER',function(rex_extension_point $ep){
 
