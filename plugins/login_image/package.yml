@@ -1,0 +1,14 @@
+# Alle hier gesetzten Werte können über $addon->getProperty($key) abgefragt werden
+
+package: out5/login_image
+version: '0.1'
+author: Oliver Kreischer
+supportpage: www.redaxo.org/de/forum
+title: 'Login Image'
+nav_icon: fa-image
+kurzbeschreibung: 'Darstellung eines Bildes auf der Loginseite'
+umgebung: Backend
+
+page:
+    title: 'Login Image'
+    hidden: true

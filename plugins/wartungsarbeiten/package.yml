@@ -1,0 +1,14 @@
+# Alle hier gesetzten Werte können über $addon->getProperty($key) abgefragt werden
+
+package: out5/wartungsarbeiten
+version: '0.1'
+author: Oliver Kreischer
+supportpage: www.redaxo.org/de/forum
+title: 'Wartungsarbeiten'
+nav_icon: fa-share
+kurzbeschreibung: 'Umleitung der Frontendseite auf eine beliebige URL sofern der Besucher nicht im Backend angemeldet ist.'
+umgebung: Frontend
+
+page:
+    title: 'Wartungsarbeiten'
+    hidden: true
