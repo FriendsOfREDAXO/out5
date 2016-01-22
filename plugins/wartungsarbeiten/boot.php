@@ -1,11 +1,10 @@
 <?php
 if (!rex::isBackend()) {
-
-  $session = rex_backend_login::hasSession();
-
-  if (!$session) {
-    header('Location: ' . $this->getConfig('url'));
-   exit;
-  }
-
+	if ($this->getConfig('status') != 'deaktiviert') {
+		$session = rex_backend_login::hasSession();
+		if (!$session) {
+			header('Location: ' . $this->getConfig('url'));
+			exit;
+  		}
+  	}
 }

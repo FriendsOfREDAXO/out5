@@ -1,6 +1,26 @@
 <?php
 
 $func               = rex_request('func', 'string');
+$status             = rex_request('status', 'string');
+$plugin_status		= rex_request('key', 'string');
+if ($func == 'setstatus') {
+
+	$plugin_temp = rex_plugin::get('out5', $plugin_status);
+	
+	if ($status == "aktivieren") {
+		$plugin_temp->setConfig('status', 'aktiviert');  		
+	} else {
+		$plugin_temp->setConfig('status', 'deaktiviert');  				
+	}
+	
+	
+	
+	
+    $func 	= '';
+    $status = '';
+    $plugin 	= '';
+}
+
 
 if ($func == '') {
 $content = '
@@ -15,6 +35,7 @@ $content = '
           <th>Name</th>
           <th>Kurzbeschreibung</th>
           <th>Umgebung</th>
+          <th>Status</th>          
           <th></th>
         </tr>
       </thead>
@@ -45,6 +66,11 @@ if(!empty($AvailablePlugins)) {
     if (!$umgebung) {
       $umgebung = $key;
     }
+    $status = $plugin->getConfig('status');
+    if (!$status) {
+      $status = 'kein Status vergeben';
+    } 
+    
     rex_perm::register('out5['.$key.']'); // with perms?
     $Page['subpages']['main']['subpages'][$key] = [
       'title' => $title,
@@ -60,8 +86,18 @@ $content .= '
     </td>
 
     <td  data-title="Kurzbeschreibung" >'.$kurzbeschreibung.'</td>
-    <td data-title="Umgebung">'.$umgebung.'</td>
-    <td class="rex-table-action"><a href="index.php?page=out5/'.$key.'/"><i class="rex-icon rex-icon-edit"></i> editieren</a></td>
+    <td data-title="Umgebung">'.$umgebung.'</td>';
+    
+    if ($status == 'deaktiviert') {
+$content .= '
+    <td data-title="Status"><a class="rex-offline" style="white-space: nowrap;" href="index.php?page=out5/uebersicht&amp;func=setstatus&status=aktivieren&key='.$key.'"><i class="rex-icon rex-icon-active-false"></i>'.$status.'</a></td>';	    
+    } else {
+$content .= '
+    <td data-title="Status"><a class="rex-online" style="white-space: nowrap;" href="index.php?page=out5/uebersicht&amp;func=setstatus&status=deaktivieren&key='.$key.'"><i class="rex-icon rex-icon-active-true"></i>'.$status.'</a></td>';	    
+    }
+   
+$content .='    
+    <td class="rex-table-action"><a style="white-space: nowrap;" href="index.php?page=out5/'.$key.'/"><i class="rex-icon rex-icon-edit"></i> editieren</a></td>
   </tr>
 ';
 
