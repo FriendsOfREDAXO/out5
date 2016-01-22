@@ -21,11 +21,11 @@ $formElements = [];
 
 $n = [];
 $n['label'] = '<label for="rex-out5-border-text">Text</label>';
-$n['field'] = '<input type="text" id="rex-out5-border-text" name="config[text]" value="' . $plugin->getConfig('text') . '"/>';
+$n['field'] = '<input class="form-control"  type="text" id="rex-out5-border-text" name="config[text]" value="' . $plugin->getConfig('text') . '"/>';
 $formElements[] = $n;
 
 $n['label'] = '<label for="rex-out5-border-farbe">Farbe</label>';
-$n['field'] = '<input type="text" id="rex-out5-border-farbe" name="config[farbe]" value="' . $plugin->getConfig('farbe'). '"/>';
+$n['field'] = '<input class="form-control" type="text" id="rex-out5-border-farbe" name="config[farbe]" value="' . $plugin->getConfig('farbe'). '"/>';
 $formElements[] = $n;
 
 $fragment = new rex_fragment();
@@ -40,7 +40,7 @@ $content .= '
 $formElements = [];
 
 $n = [];
-$n['field'] = '<input type="submit" name="config-submit" value="Speichern" />';
+$n['field'] = '<div class="btn-toolbar"><button id="rex-out5-border-save" type="submit" name="config-submit" class="btn btn-save rex-form-aligned" value="1">Einstellungen speichern</button></div>';
 $formElements[] = $n;
 
 $fragment = new rex_fragment();

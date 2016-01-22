@@ -5,6 +5,8 @@ if (rex::isBackend()) {
 			$filepath = '';
 			$bild = $this->getConfig('bild');
 					
+					
+						
 			if ($bild != 'out5_login_image.jpg') {
 				$filepath = '<img src="/media/'.$bild.'" width="340" height="90" alt="Bitte anmelden"/>';
 			} else {
