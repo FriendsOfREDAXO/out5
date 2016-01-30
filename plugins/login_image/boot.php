@@ -8,9 +8,9 @@ if (rex::isBackend()) {
 					
 						
 			if ($bild != 'out5_login_image.jpg') {
-				$filepath = '<img src="/media/'.$bild.'" width="340" height="90" alt="Bitte anmelden"/>';
+				$filepath = '<img src="/media/'.$bild.'" width="100%" height="auto" alt="Bitte anmelden"/>';
 			} else {
-				$filepath = '<img src="/assets/addons/out5/plugins/login_image/images/'.$bild.'" width="340" height="90" alt="Bitte anmelden"/>';
+				$filepath = '<img src="/assets/addons/out5/plugins/login_image/images/'.$bild.'" width="100%" height="auto" alt="Bitte anmelden"/>';
 	  		}
 	  		
 	  		$suchmuster = '<header class="panel-heading"><div class="panel-title">Bitte anmelden.</div></header>';
