@@ -1,0 +1,14 @@
+# Alle hier gesetzten Werte können über $addon->getProperty($key) abgefragt werden
+
+package: out5/min_html
+version: '0.1'
+author: Oliver Kreischer
+supportpage: www.redaxo.org/de/forum
+title: 'minHTML'
+nav_icon: fa-file
+kurzbeschreibung: 'Komprimiert den augegebenen HTML Code'
+umgebung: Frontend
+
+page:
+    title: 'minHTML'
+    hidden: true
