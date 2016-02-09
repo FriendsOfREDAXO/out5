@@ -1,14 +1,14 @@
 # Alle hier gesetzten Werte können über $addon->getProperty($key) abgefragt werden
 
-package: out5/min_html
+package: out5/min
 version: '0.1'
 author: Oliver Kreischer
 supportpage: www.redaxo.org/de/forum
-title: 'minHTML'
+title: 'min'
 nav_icon: fa-file
-kurzbeschreibung: 'Komprimiert den augegebenen HTML Code'
+kurzbeschreibung: 'Komprimiert den augegebenen HTML Code und bietet die Möglichkeit CSS bzw. JS Dateien zusammenzufassen und zu minifizieren.'
 umgebung: Frontend
 
 page:
-    title: 'minHTML'
+    title: 'min'
     hidden: true
