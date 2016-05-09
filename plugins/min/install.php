@@ -1,8 +1,7 @@
 <?php
 
-$plugin = rex_plugin::get('out5', 'login_image');
+$plugin = rex_plugin::get('out5', 'min');
 
 if (!$plugin->hasConfig()) {
-    $plugin->setConfig('bild', 'out5_login_image.jpg');
-    $plugin->setConfig('status', 'deaktiviert');    
+    $plugin->setConfig('status', 'deaktiviert');
 }

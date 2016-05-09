@@ -120,9 +120,6 @@ if (!rex::isBackend()) {
         $input);
     }
 
-
-
-
 	if ($this->getConfig('status') != 'deaktiviert') {
 		rex_extension::register('OUTPUT_FILTER',function(rex_extension_point $ep){
 			$ep->setSubject(minify_html($ep->getSubject()));

@@ -1,0 +1,15 @@
+# Alle hier gesetzten Werte können über $addon->getProperty($key) abgefragt werden
+
+package: out5/structure_separators
+version: '0.1'
+author: Oliver Kreischer, Thomas Blum
+
+supportpage: www.redaxo.org/de/forum
+title: 'Structur Separartors'
+nav_icon: fa-minus
+kurzbeschreibung: 'Ermöglicht es Trenner in der Struktur zu definieren.'
+umgebung: Backend
+
+page:
+    title: 'Structure Separators'
+    hidden: true
