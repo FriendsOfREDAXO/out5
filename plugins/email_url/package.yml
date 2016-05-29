@@ -2,8 +2,8 @@
 
 package: out5/email_url
 version: '0.1'
-author: Oliver Kreischer
-supportpage: www.redaxo.org/de/forum
+author: Friends Of REDAXO
+supportpage: https://github.com/FriendsOfREDAXO/out5
 title: 'E-Mail / Links'
 nav_icon: fa-envelope-o
 kurzbeschreibung: 'E-Mail-Adressen mit Klasse "email" versehen und verschlüsseln.<br/>Externe URLs mit der Klasse "extern" versehen.'

@@ -1,8 +1,8 @@
 # Alle hier gesetzten Werte können über $addon->getProperty($key) abgefragt werden
 
 package: out5/structure_separators
-version: '0.1'
-author: Oliver Kreischer, Thomas Blum
+author: Friends Of REDAXO
+supportpage: https://github.com/FriendsOfREDAXO/out5
 
 supportpage: www.redaxo.org/de/forum
 title: 'Structur Separartors'

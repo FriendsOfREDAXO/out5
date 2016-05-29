@@ -2,8 +2,8 @@
 
 package: out5/min
 version: '0.1'
-author: Oliver Kreischer
-supportpage: www.redaxo.org/de/forum
+author: Friends Of REDAXO
+supportpage: https://github.com/FriendsOfREDAXO/out5
 title: 'min'
 nav_icon: fa-file
 kurzbeschreibung: 'Komprimiert den augegebenen HTML Code und bietet die Möglichkeit CSS bzw. JS Dateien zusammenzufassen und zu minifizieren.'
