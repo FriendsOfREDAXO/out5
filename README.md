@@ -1,4 +1,4 @@
-Outpufilter für Redaxo 5
+Outpufilter für REDAXO 5
 ========================
 
 Plugins müssen installiert und aktiviert werden...
