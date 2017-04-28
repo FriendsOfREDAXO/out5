@@ -27,7 +27,7 @@ $n['field'] = '<input class="form-control" type="text" id="rex-out5-wartungsarbe
 $formElements[] = $n;
 
 $n1['label'] = '<label for="rex-out5-wartungsarbeiten-url">IP</label>';
-$n1['field'] = '<input class="form-control" type="text" id="rex-out5-wartungsarbeiten-ip" name="config[ip]" value="' . $plugin->getConfig('ip') . '"/><i>Ihre IP:'.$_SERVER['REMOTE_ADDR'].'</i>';
+$n1['field'] = '<input class="form-control" type="text" id="rex-out5-wartungsarbeiten-ip" name="config[ip]" value="' . $plugin->getConfig('ip') . '"/><i>IP:'.$_SERVER['REMOTE_ADDR'].'</i>';
 $formElements[] = $n1;
 
 
