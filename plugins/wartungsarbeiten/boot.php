@@ -2,8 +2,7 @@
 if (!rex::isBackend()) {
 	if ($this->getConfig('status') != 'deaktiviert') {
 		$session = rex_backend_login::hasSession();
-		$ipcheck = $_SERVER['REMOTE_ADDR'];
-		if (!$session and $ipcheck!=$this->getConfig('ip')) {
+		if (!$session and $this->getConfig('ip')!=$_SERVER['REMOTE_ADDR']) {
 			header('Location: ' . $this->getConfig('url'));
 			exit;
   		}
