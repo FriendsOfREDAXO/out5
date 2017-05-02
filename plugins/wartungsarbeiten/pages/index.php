@@ -7,6 +7,9 @@ if (rex_post('config-submit', 'boolean')) {
     $plugin->setConfig(rex_post('config', [
         ['url', 'string'],
     ]));
+	$plugin->setConfig(rex_post('config', [
+        ['ip', 'string'],
+    ]));
 
     $content .= rex_view::info('Änderung gespeichert');
 }
@@ -22,6 +25,11 @@ $n = [];
 $n['label'] = '<label for="rex-out5-wartungsarbeiten-url">URL</label>';
 $n['field'] = '<input class="form-control" type="text" id="rex-out5-wartungsarbeiten-url" name="config[url]" value="' . $plugin->getConfig('url') . '"/>';
 $formElements[] = $n;
+
+$n1['label'] = '<label for="rex-out5-wartungsarbeiten-url">IP</label>';
+$n1['field'] = '<input class="form-control" type="text" id="rex-out5-wartungsarbeiten-ip" name="config[ip]" value="' . $plugin->getConfig('ip') . '"/><i>IP:'.$_SERVER['REMOTE_ADDR'].'</i>';
+$formElements[] = $n1;
+
 
 $fragment = new rex_fragment();
 $fragment->setVar('elements', $formElements, false);
@@ -53,3 +61,4 @@ $fragment->setVar('class', 'edit');
 $fragment->setVar('title', 'Wartungsarbeiten - Einstellungen');
 $fragment->setVar('body', $content, false);
 echo $fragment->parse('core/page/section.php');
+
