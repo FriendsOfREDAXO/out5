@@ -4,6 +4,11 @@
 
 ### Changelog ###
 
+### 27.08.2017 Version 1.0.1 ###
+
+- In den Wartungsarbeiten kann nun eine IP hinterlegt werden, die immer Zugriff auf das Frontend erhält
+
+
 ### 25.02.2017 Version 1.0.1 ###
 
 - Update en_gb.lang - Danke an @ynamite!
