@@ -4,7 +4,7 @@
 
 ### Changelog ###
 
-### 27.08.2017 Version 1.0.1 ###
+### 27.08.2017 Version 1.1.0 ###
 
 - In den Wartungsarbeiten kann nun eine IP hinterlegt werden, die immer Zugriff auf das Frontend erhält
 
