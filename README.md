@@ -1,3 +1,6 @@
+
+*ACHTUNG*: Dieses AddOn wird nicht mehr weiterentwicklet, da es für alle Funktionen inzwichen bessere Alternativen gibt.
+
 Outpufilter für REDAXO 5
 ========================
 
